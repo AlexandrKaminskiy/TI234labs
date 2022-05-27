@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>TI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+
+<form th:action="@{/stream/input_of_file}" method="post" enctype="multipart/form-data">
+
+    <div>
+        <p>Выберите действие</p>
+        <select name="actionList">
+            <option th:each="actionList : ${actionList}"
+                    th:text="${actionList}"
+            />
+        </select>
+    </div>
+
+    <div>
+        <p>Выбрать файл</p>
+        <input type="file" name="file" multiple>
+    </div>
+
+    <div>
+        <p>Введите начальное значение регистра</p>
+        <input type="text" name="registerValue">
+    </div>
+
+    <div>
+        <input type="submit" name="uploadfile" value="Выполнить">
+    </div>
+
+</form>
+
+
+<div>
+
+</div>
+
+
+
+</body>
+
+</html>

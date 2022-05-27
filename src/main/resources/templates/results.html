@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+<div>
+    Ключи
+    <p> P </p>
+    <div>
+        <div th:text="${p}"></div>
+    </div>
+
+    <p> X </p>
+    <div>
+        <div th:text="${x}"></div>
+    </div>
+
+    <p> Y </p>
+    <div>
+        <div th:text="${y}"></div>
+    </div>
+
+    <p> K </p>
+    <div>
+        <div th:text="${k}"></div>
+    </div>
+
+    Первообразный корень
+    <div>
+        <div th:text="${g}"></div>
+    </div>
+    <div th:text="${key}"></div>
+</div>
+
+
+
+<div style="display: inline-block; width: 500px;border-left: 1px solid black">
+    Исходный текст
+    <div th:text="${inputStream}" ></div>
+</div>
+
+<div style="display: inline-block; width: 500px;border-left: 1px solid black">
+    Выходной текст
+    <div th:text="${outputStream}"></div>
+</div>
+
+
+
+
+<div th:text="${log}"></div>
+</body>
+</html>

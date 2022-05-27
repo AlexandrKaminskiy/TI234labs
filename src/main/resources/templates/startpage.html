@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>TI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+
+<form th:action="inputKeys" method="post" enctype="multipart/form-data">
+
+    <div>
+        <p>Введите p</p>
+        <input type="text" name="pValue">
+    </div>
+
+    <div>
+        <p>Введите x</p>
+        <input type="text" name="xValue">
+    </div>
+
+    <div>
+        <p>Введите k</p>
+        <input type="text" name="kValue">
+    </div>
+
+    <div>
+        <input type="submit" name="uploadfile" value="Выполнить">
+    </div>
+
+</form>
+
+
+<div>
+
+</div>
+
+
+
+</body>
+
+</html>
