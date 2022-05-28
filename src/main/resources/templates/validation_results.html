@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 </head>
+
 <body>
-$END$
+  <p>Валидность:</p>
+  <p th:text="${valid}"></p>
+  <p>Изначальный хеш:</p>
+  <p th:text="${hash}"></p>
+  <p>Изначальная ЭЦП</p>
+  <p th:text="${sign}"></p>
+  <p>Посчитанный хеш:</p>
+  <p th:text="${hash2}"></p>
 </body>
 </html>

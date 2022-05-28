@@ -8,6 +8,25 @@
 </head>
 
 <body>
+  <p>Файл подписан</p>
+  <p>Открытый ключ:</p>
+  <p th:text="${openKey}"></p>
+  <p>Закрытый ключ:</p>
+  <p th:text="${closedKey}"></p>
+  <p>P:</p>
+  <p th:text="${P}"></p>
+  <p>Q:</p>
+  <p th:text="${Q}"></p>
+  <p>Хеш:</p>
+  <p th:text="${hash}"></p>
+  <p>ЭЦП</p>
+  <p th:text="${sign}"></p>
+  <p>Проверить файл</p>
+  <form th:action="'/rsa/' + validatefile" enctype="multipart/form-data" method="post">
+    <input type="file" th:name="file">
+    <br>
+    <input type="submit">
+  </form>
 
 </body>
 </html>

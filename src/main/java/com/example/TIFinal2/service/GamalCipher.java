@@ -244,4 +244,6 @@ public class GamalCipher {
             else return x + n;
 
     }
+
+
 }
